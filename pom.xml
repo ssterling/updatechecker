@@ -89,5 +89,19 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ftp</artifactId>
+				<version>3.5.2</version>
+			</extension>
+		</extensions>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>ssterling-repo</id>
+			<url>ftp://maven@peridot.ssterling.net/</url>
+		</repository>
+	</distributionManagement>
 </project>
