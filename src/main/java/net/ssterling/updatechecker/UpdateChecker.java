@@ -62,11 +62,7 @@ public class UpdateChecker
 		URL update_url = new URL("https://api.spigotmc.org/legacy/update.php?resource=" + project_id);
 		URLConnection update_conn = update_url.openConnection();
 		String new_version = new BufferedReader(new InputStreamReader(update_conn.getInputStream())).readLine();
-		if (versionIsHigher(new_version, current_version)) {
-			return new_version;
-		} else {
-			return null;
-		}
+		return versionIsHigher(new_version, current_version) ? new_version : null;
 	}
 
 	/**
@@ -82,12 +78,6 @@ public class UpdateChecker
 		ComparableVersion version_a = new ComparableVersion(version_a_str);
 		ComparableVersion version_b = new ComparableVersion(version_b_str);
 
-		if (version_a.compareTo(version_b) > 0) {
-			/* Version A is higher */
-			return true;
-		} else {
-			/* Version B is higher, or both versions are equal */
-			return false;
-		}
+		return version_a.compareTo(version_b) > 0 ? true : false;
 	}
 }
