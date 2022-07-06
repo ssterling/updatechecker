@@ -6,7 +6,7 @@
 
 	<name>UpdateChecker</name>
 	<description>Check for updates to a Spigot plugin</description>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<url>http://www.gitlab.com/ssterling/updatechecker/</url>
 
 	<properties>
@@ -69,8 +69,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 			<plugin>
