@@ -6,8 +6,8 @@
 
 	<name>UpdateChecker</name>
 	<description>Check for updates to a Spigot plugin</description>
-	<version>1.0.2-SNAPSHOT</version>
-	<url>http://www.gitlab.com/ssterling/updatechecker/</url>
+	<version>1.0.2</version>
+	<url>https://www.gitlab.com/ssterling/updatechecker/</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,8 +29,8 @@
 		<developer>
 			<id>ssterling</id>
 			<name>Seth Price</name>
-			<email>ssterling@firemail.cc</email>
-			<url>http://www.ssterling.net/</url>
+			<email>sprice623@aol.com</email>
+			<url>https://www.ssterling.net/</url>
 			<roles>
 				<role>creator</role>
 				<role>developer</role>
