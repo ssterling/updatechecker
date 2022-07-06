@@ -6,7 +6,7 @@
 
 	<name>UpdateChecker</name>
 	<description>Check for updates to a Spigot plugin</description>
-	<version>1.0.2</version>
+	<version>1.1.0</version>
 	<url>https://www.gitlab.com/ssterling/updatechecker/</url>
 
 	<properties>

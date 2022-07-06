@@ -1,6 +1,12 @@
 Changelog
 =========
 
+v1.1.0 (2022/07/06)
+-------------------
+
+* Fixed erroneous capitalisation of package name
+  preventing compilation in certain situations
+
 v1.0.2 (2022/07/06)
 -------------------
 
