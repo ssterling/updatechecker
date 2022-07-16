@@ -33,13 +33,16 @@ import org.apache.maven.artifact.versioning.ComparableVersion;
 
 /**
  * @author    Seth Price <ssterling AT firemail DOT cc>
- * @version   1.0
- * @since     1.0
+ * @version   1.1.1
+ * @since     1.0.0
  */
 public class UpdateChecker
 {
 	private static String project_id;
 	private static String current_version;
+
+	// Disabled
+	private UpdateChecker() {}
 
 	/**
 	 * @param project_id	The project ID of the plugin, found in the project URL.
