@@ -32,19 +32,27 @@ import java.net.URLConnection;
 import org.apache.maven.artifact.versioning.ComparableVersion;
 
 /**
- * @author    Seth Price <ssterling AT firemail DOT cc>
+ * The {@code UpdateChecker} class consists of tools to check for an update
+ * to a Spigot plugin, as well as the information needed to do such.
+ *
+ * @author    Seth Price
  * @version   1.1.1
  * @since     1.0.0
  */
 public class UpdateChecker
 {
+	/** The Spigot project ID for which to check for updates. */
 	private static String project_id;
+
+	/** The version of the plugin to compare against that on Spigot. */
 	private static String current_version;
 
 	// Disabled
 	private UpdateChecker() {}
 
 	/**
+	 * Constructs an {@code UpdateChecker} object.
+	 *
 	 * @param project_id	The project ID of the plugin, found in the project URL.
 	 * @param current_version	The current version of the plugin.
 	 */
@@ -57,8 +65,8 @@ public class UpdateChecker
 	/**
 	 * Checks for updates to the plugin.
 	 *
-	 * @return new version if update exists, null if otherwise
-	 * @since 1.0
+	 * @return	new version if update exists, null otherwise
+	 * @since	1.0.0
 	 */
 	public static String check() throws Throwable
 	{
@@ -71,10 +79,10 @@ public class UpdateChecker
 	/**
 	 * Determines whether a given version is higher than another.
 	 *
-	 * @param version_a_str	First version string to compare.
-	 * @param version_b_str	Second version string to compare.
-	 * @return true if first version string is higher, false if otherwise
-	 * @since 1.0
+	 * @param	version_a_str first version string to compare
+	 * @param	version_b_str second version string to compare
+	 * @return	true if {@code version_a_str} is newer, false otherwise
+	 * @since	1.0.0
 	 */
 	private static boolean versionIsHigher(String version_a_str, String version_b_str)
 	{
